@@ -44,32 +44,43 @@ public class MainActivity extends AppCompatActivity {
         productList.add(
                 new Product(
                         1,
-                        " Axis Bank Opening Procedure\n",
+                        " Sample 1\n",
                         60000,
                         R.drawable.unnamed,
-                        "https://firebasestorage.googleapis.com/v0/b/pdf-reader-bae37.appspot.com/o/Steps_to_open_Axis_Bank_account.pdf?alt=media&token=246b7f4b-b991-4cc3-8bfe-02365a4a7230"
+                        "https://firebasestorage.googleapis.com/v0/b/pdf-reader-bae37.appspot.com/o/sample.pdf?alt=media&token=ab5fd1ae-dcd8-47dd-a02d-93a0313e1579"
 
                 ));
 
         productList.add(
                 new Product(
                         1,
-                        " icici Bank Opening Procedure \n",
+                        " Sample 2\n",
 
                         60000,
                         R.drawable.unnamed,
-                        "https://firebasestorage.googleapis.com/v0/b/pdf-reader-bae37.appspot.com/o/Steps_to_open_ICICI_Bank_account.pdf?alt=media&token=b28b09cd-d25d-47b4-9670-5c976a7a8491"
-                ));
+                        "https://firebasestorage.googleapis.com/v0/b/pdf-reader-bae37.appspot.com/o/file-sample_150kB.pdf?alt=media&token=1bf4fbbf-0639-42de-8610-854a77f2d7ee"
 
+                ));
         productList.add(
                 new Product(
                         1,
-                        "Msd Unit 3",
+                        "Sample 3",
 
 
                         60000,
                         R.drawable.unnamed,
                         "https://firebasestorage.googleapis.com/v0/b/pdf-reader-bae37.appspot.com/o/MSD%20_%20UNIT%20-III%20_%20MCQ-merged.pdf?alt=media&token=06778e1b-1721-4e3a-9091-167fef679706"
+                ));
+
+        productList.add(
+                new Product(
+                        1,
+                        "Sample 4",
+
+
+                        60000,
+                        R.drawable.unnamed,
+                        "https://firebasestorage.googleapis.com/v0/b/pdf-reader-bae37.appspot.com/o/Get_Started_With_Smallpdf.pdf?alt=media&token=34312161-dfbb-4ee6-a000-0f45b24cbf26"
                 ));
 
         //creating recyclerview adapter
