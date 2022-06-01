@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.github.barteksc.pdfviewer.PDFView;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.BufferedInputStream;
@@ -27,6 +28,7 @@ import java.net.URL;
 public class pdf extends AppCompatActivity {
     String link="",productList="",product="";
     PDFView pdfView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,11 +37,9 @@ public class pdf extends AppCompatActivity {
         productList=getIntent().getStringExtra("productList");
         link=getIntent().getStringExtra("link");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle(productList);
         pdfView=findViewById(R.id.pdfv);
        // pdfView.fromAsset(link).load();
-
 
 
         if (isConnected()) {

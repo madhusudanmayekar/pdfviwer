@@ -11,6 +11,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
@@ -30,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
         RelativeLayout relativeLayout = findViewById(R.id.rl);
         relativeLayout.startAnimation(animation);
         //getting the recyclerview from xml
+
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
 
         //initializing the productlist
         productList = new ArrayList<>();
